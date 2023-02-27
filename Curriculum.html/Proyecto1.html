@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        img{
+            position: absolute;
+            left: 70px;
+            top: 70px;
+            z-index: 10;
+            border-radius: 50%;
+        }
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /*Estilo de encabezado*/
+        header {
+          background-color: #2e3337;
+          padding: 30px;
+          text-align: center;
+          font-size: 20px;
+          color: white;
+          border: 7px solid rgb(120, 127, 136) ;
+           
+        }
+        
+        /*Crea dos columnas/cajas que flotan una al lado de la otra */
+        nav {
+          float: left;
+          width: 20%;
+          height: 450px; /* solo para demostración, podria ser eliminado */
+          background: #757377;
+          padding: 20px;
+          border: 7px solid rgb(101, 108, 116) ;
+        }
+        
+        /*Estilo de la lista dentro del menú */
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        article {
+          float: left;
+          padding: 20px;
+          width: 80%;
+          background-color: #adb0b3;
+          height: 450px; /* solo para demostración, podria ser eliminado */
+          border: 7px solid rgb(108, 113, 119) ;
+        }
+        
+        /* Borrar flotadores después de las columnas */
+        section::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Diseña el pie de página */
+        footer {
+          background-color: #0e0e0f;
+          padding: 10px;
+          text-align: center;
+          color: white;
+          border: 7px solid rgb(107, 111, 115) ;
+        }
+        
+        /* Responsive layout -hace que las dos columnas/cajas se apilen una encima de la otra en lugar de una al lado de la otra, en pantallas pequeñas */
+        @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height: auto;
+          }
+        }
+        </style>
+
+
+
+
+
+</head>
+<body>
+    
+    <header>
+        <h3>Curriculum</h3>
+        <h2>Victor Amari</h2>     
+        <h6>Profesor de música</h6>
+        <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="Mi foto">
+        
+    </header>
+    
+    <section>
+      <nav>
+        <ul>
+  
+          <li><a href="mailto:m.bluth@example.com"><strong> e-mail</strong>    <span style='font-size:50px;'>&#128231;</span>
+            </a></li> 
+          <br>
+          <br>
+          <li><a href="tel:+123456789"><strong> Celular</strong>  <span style='font-size:50px;'>&#128241;</span>
+          </a></li>
+<br>
+<br>
+<br>
+   <p id="demo">Telefono fijo</p> <span style='font-size:40px;'>&#128222;</span>
+
+<button type="button" id="boton">Hacer Click</button>
+
+<script src=js/function.js></script>
+
+        </ul>
+        
+      </nav>
+      
+      <article>
+        <h1>Datos Personales</h1>
+        <p><strong>Nombre: </strong>Victor Amari <br>
+        <strong>Dirección: </strong>
+    Santos Dominguez 720 <br>
+<strong>Fecha y lugar de nacimiento: </strong>
+10 de Junio de 1975 en Santa Fe <br></p>
+
+<h1>Estudios Realizados</h1>
+
+Bachiller en Artes  Visuales y Plásticas en la escuela secundaria y superior Enrique Carbó de la ciudad de Paraná <br>
+Profesorado de Arte y Música de la Universidad Nacional del Litoral <br>
+Curso avanzado de canto coral <br>
+Curso de nivel superior en instrumentos de cuerdas <br>
+Posgrado en magisterio y educación para jóvenes y adultos 
+
+
+<h1>Experiencia Laboral</h1>
+
+        <p> <strong> 2000:</strong> Profesor Adjunto en Instituto Nacional de Arte y Música, cátedra de instrumentos de cuerda <br>
+          <strong> 2004: </strong>Jefe de Catedra en Escuela de Bellas Artes de la ciudad de Santa Fe <br>
+          <strong> 2007: </strong>Director de coro municipal de la ciudad de Diamante, Entre Ríos <br>
+          <strong> 2011:</strong> Integrante de banda rock sinfónico, guitarra eléctrica y segunda voz 
+        </p>
+
+      </article>
+    </section>
+    
+    <footer>
+      <p> <b><strong> Mi perfil</p></b></strong>
+      Profesor experimentado y apasionado con un profundo compromiso por la educación de la juventud
+       de hoy. Apto para la creación de un plan de estudios integral y completo que cumpla con los
+        requisitos y estándares de educación. Capaz de ejercer como mediador de experiencias de aprendizaje
+         de gran alcance, mientras que los estudiantes pueden dominar ciertas lecciones y liderar con
+          curiosidad. Familiarizado con muchas filosofías educativas de renombre, dirigidas a apoyar a
+           un joven, académica, emocional y socialmente. Aporta dedicación, habilidad y el deseo de ser 
+           positivamente impactante en las vidas de los estudiantes.
+
+    </footer>
+    
+
+    
+</body>
+
+
+
+</html>
